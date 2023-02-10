@@ -1,5 +1,5 @@
 <template>
-    <div class="black-bg" v-vi="ModalOpen == true">
+    <div class="black-bg" v-if="ModalOpen == true">
         <div class="white-bg">
             <div class="modal-header">
                 <h1 class="modal-header-h1">문의하기</h1>
