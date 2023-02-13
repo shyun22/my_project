@@ -8,12 +8,12 @@
             </div>
             <div class="History-link-box">
                 <a class="History-link" href="#">2016년~현재</a>
-                <a class="History-link" href="#">2010년~2015년</a>
+                <a class="History-link" href="./HistoryView1.vue">2010년~2015년</a>
                 <a class="History-link" href="#">2001년~2009년</a>
             </div>
             <div class="History-img-box">
-                <h1 class="History-img-title">A New Leap Forward</h1>
-                <p class="History-img-content">디포커스 비즈니스 영역 확대</p>
+                <h1 class="History-img-title">Change and lnnovation</h1>
+                <p class="History-img-content">디포커스 성장과 변모</p>
             </div>
             <div class="History-main-box">
                 <div class="History-main-year">
