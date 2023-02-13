@@ -1,5 +1,6 @@
 <template>
     <div class="business-Inquiry">
+        <ModalOpen @closeModal="modal_Open = false" />
         <div class="business-Inquiry-img">
             <div class="padding-div-top-80">
                 <div class="one-eyes-div">
@@ -23,15 +24,21 @@
 </template>
 
 <script>
+import ModalOpen from './ModalOpen.vue';
+
+
+
 
 
 export default {
     name: "BusinessInquiry",
     components: {
+        ModalOpen,
+        
     },
     methods: {
     }
-    }
+}
 
 </script>
 
@@ -54,7 +61,7 @@ export default {
 }
 
 .business-Inquiry-text {
-    color:white;
+    color: white;
     font-size: 15px;
 }
 
@@ -62,10 +69,10 @@ export default {
     border-radius: 30px;
     height: 50px;
     width: 130px;
-    background:none;
+    background: none;
     color: white;
     font-size: 17px;
-    border-color:white;
+    border-color: white;
     font-weight: bold;
 }
 

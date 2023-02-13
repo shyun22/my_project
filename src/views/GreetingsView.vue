@@ -10,11 +10,11 @@
                 <img class="Greeting-img" src="https://cdn.imweb.me/thumbnail/20220929/b94200457690b.jpg">
             </div>
             <div class="Greeting-content">
-                <div class="Greeting-content-right-box">
-                    <strong class="Greeting-content-right">고객의 가치를 창출하기 위해</strong>
-                    <p class="Greeting-content-right">디포커스는 노력합니다.</p>
+                <div class="Greeting-content-left-box">
+                    <strong class="Greeting-content-left">고객의 가치를 창출하기 위해</strong>
+                    <p class="Greeting-content-left">디포커스는 노력합니다.</p>
                 </div>
-                <div class="Greeting-content-left">
+                <div class="Greeting-content-right">
                     <p>디포커스는 2001년 설립이래 데이터 분석(Data Analytics), ERP, 클라우드, 디지털 전환(Digital Transformation), AI 분야에서 컨설팅 및
                         구축 사업을 수행하고 있습니다.
 
@@ -52,9 +52,10 @@ export default {
 }
 
 .Greeting-title {
-padding: 40px;
-letter-spacing: -1px;
+    padding: 40px;
+    letter-spacing: -1px;
 }
+
 .Greeting-img-box {
     margin-bottom: 50px;
 }
@@ -64,17 +65,19 @@ letter-spacing: -1px;
 }
 
 .Greeting-content {
-display:flex;
+    display: flex;
 }
-.Greeting-content-right {
+
+.Greeting-content-left {
     font-size: 30px;
-    text-align:left;
+    text-align: left;
     letter-spacing: -3px;
 
 }
-.Greeting-content-left {
-flex: 1;
-}
 
-    
+.Greeting-content-right {
+    flex: 1;
+    text-align: left;
+
+}
 </style>

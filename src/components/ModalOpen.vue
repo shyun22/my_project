@@ -1,5 +1,5 @@
 <template>
-    <div class="black-bg" v-if="ModalOpen == true">
+    <div class="black-bg" v-if="modal_Open == true">
         <div class="white-bg">
             <div class="modal-header">
                 <h1 class="modal-header-h1">문의하기</h1>
@@ -7,14 +7,14 @@
             <div class="modeal-body">
                 <textarea type="text" class="modal-input" placeholder="내용" rwos="20"></textarea>
                 <button @click="$emit('closeModal')">닫기</button>
-            </div>    
+            </div>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name : "ModalOpen",
+    name: "ModalOpen",
 
 }
 </script>
@@ -40,5 +40,4 @@ export default {
     font-weight: bold;
     color: rgb(0, 0, 0);
 }
-
 </style>

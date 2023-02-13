@@ -16,10 +16,10 @@
       </div>
     </nav>
     <router-view />
-    <BusinessInquiry @openModal="ModalOpen=true"/>
-    <ModalOpen @closeModal="ModalOpen=false"/>
+    <!-- <ModalOpen @closeModal="modal_Open = false" /> -->
+    <BusinessInquiry @openModal="modal_Open = true" />
     <TagBox />
-    <FooterBox :주소="주소" :연락처="연락처" :COPYRIGHT="COPYRIGHT"/>
+    <FooterBox :주소="주소" :연락처="연락처" :COPYRIGHT="COPYRIGHT" />
   </div>
 </template>
 
@@ -28,7 +28,7 @@
 import BusinessInquiry from "./components/BusinessInquiry.vue"
 import TagBox from "./components/TagBox.vue";
 import FooterBox from "./components/FooterBox.vue";
-import ModalOpen from "./components/ModalOpen.vue";
+// import ModalOpen from "./components/ModalOpen.vue";
 
 
 
@@ -38,7 +38,7 @@ export default {
     BusinessInquiry,
     TagBox,
     FooterBox,
-    ModalOpen,
+    // ModalOpen,
 
 
   },
@@ -47,7 +47,7 @@ export default {
       주소: "서울시 성동구 성수이로51 한라시그마벨리 304호",
       연락처: "Tel : 02-3452-3900 | Fax : 02-556-1269",
       COPYRIGHT: "COPYRIGHT 2021DFOCUS.ALL RIGHTS RESERVED.",
-      ModalOpen: false,
+      modal_Open: false,
     }
 
   }
@@ -130,5 +130,4 @@ nav a.router-link-exact-active {
   font-weight: bold;
   font-size: 160%;
 }
-
 </style>

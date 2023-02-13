@@ -1,31 +1,31 @@
 <template>
-    <div class="bottom-tagbox">
-      <div class="bottom-tagbox-1">
-        <div class="bottom-tagbox-main" v-for="(a, i) in datasample" :key="i">
+  <div class="bottom-tagbox">
+    <div class="bottom-tagbox-1">
+      <div class="bottom-tagbox-main" v-for="(a, i) in datasample" :key="i">
 
-          <p class="tagbox-header">{{ a.title }}</p>
+        <p class="tagbox-header">{{ a.title }}</p>
 
-          <p class="tagbox-text">{{ a.content1 }}</p>
-          <p class="tagbox-text">{{ a.content2 }}</p>
-          <p class="tagbox-text">{{ a.content3 }}</p>
-          <p class="tagbox-text">{{ a.content4 }}</p>
-          <p class="tagbox-text">{{ a.content5 }}</p>
-          <p class="tagbox-text">{{ a.content6 }}</p>
-          <p class="tagbox-text">{{ a.content7 }}</p>
-          <p class="tagbox-text">{{ a.content8 }}</p>
+        <p class="tagbox-text">{{ a.content1 }}</p>
+        <p class="tagbox-text">{{ a.content2 }}</p>
+        <p class="tagbox-text">{{ a.content3 }}</p>
+        <p class="tagbox-text">{{ a.content4 }}</p>
+        <p class="tagbox-text">{{ a.content5 }}</p>
+        <p class="tagbox-text">{{ a.content6 }}</p>
+        <p class="tagbox-text">{{ a.content7 }}</p>
+        <p class="tagbox-text">{{ a.content8 }}</p>
 
-        </div>
       </div>
     </div>
-  
+  </div>
+
 </template>
 
 <script>
 export default {
-    name: "TagBox",
-    data() {
-        return {
-            datasample: [{
+  name: "TagBox",
+  data() {
+    return {
+      datasample: [{
         id: 0,
         title: "사업분야",
         content1: "DATA",
@@ -33,45 +33,27 @@ export default {
         content3: "CLOUD",
         content4: "DT",
         content5: "안전환경",
-        content6: '',
-        content7: '',
-        content8: '',
+
       },
       {
         id: 1,
         title: "솔루션",
         content1: "자사 솔루션",
         content2: "파트너 솔루션",
-        content3: '',
-        content4: '',
-        content5: '',
-        content6: '',
-        content7: '',
-        content8: '',
+
       },
       {
         id: 2,
         title: "산업",
         content1: "산업",
-        content2: '',
-        content3: '',
-        content4: '',
-        content5: '',
-        content6: '',
-        content7: '',
-        content8: '',
+
       },
       {
         id: 3,
         title: "구축사례",
         content1: "수행 프로젝트",
         content2: "구축 사례 소개",
-        content3: '',
-        content4: '',
-        content5: '',
-        content6: '',
-        content7: '',
-        content8: '',
+
       },
       {
         id: 4,
@@ -92,14 +74,11 @@ export default {
         content2: "인사제도",
         content3: "복리후생",
         content4: "채용공고",
-        content5: '',
-        content6: '',
-        content7: '',
-        content8: '',
+
       },
       ]
-        }
     }
+  }
 }
 </script>
 
@@ -125,7 +104,7 @@ export default {
   font-size: 23px;
   margin-top: 0px;
   margin-bottom: 30px;
-  text-align : left;
+  text-align: left;
   margin-left: 20px;
 }
 
@@ -137,5 +116,4 @@ export default {
   margin-left: 20px;
   text-align: left;
 }
-
 </style>
